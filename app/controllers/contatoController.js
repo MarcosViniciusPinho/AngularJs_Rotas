@@ -1,6 +1,7 @@
 angular.module('app')
     .controller('contatoCtrl', ContatoController);
 
-function ContatoController($scope){
-    $scope.message = 'Bem vindos a pagina contato';
+function ContatoController(){
+    var vm = this;
+    vm.message = 'Bem vindos a pagina contato';
 }

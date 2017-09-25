@@ -4,13 +4,16 @@ angular.module('app')
 function RouterConfig($routeProvider){
     $routeProvider.when('/home', {
         templateUrl : 'app/views/home.html',
-        controller: 'homeCtrl'
+        controller: HomeController,
+        controllerAs: 'homeCtrl'
     }).when('/contato', {
         templateUrl : 'app/views/contato.html',
-        controller: 'contatoCtrl'
+        controller: ContatoController,
+        controllerAs: 'contatoCtrl'
     }).when('/sobre', {
         templateUrl : 'app/views/sobre.html',
-        controller: 'sobreCtrl'
+        controller: SobreController,
+        controllerAs: 'sobreCtrl'
     }).otherwise({
         redirectTo: '/home'
     });
