@@ -7,21 +7,23 @@
     <script src="node_modules/angular/angular.min.js"></script>
     <script src="node_modules/angular-route/angular-route.min.js"></script>
 
+    <!--Module-->
     <script src="app/modulo.js"></script>
+
+    <!--Router-->
     <script src="app/router.js"></script>
+
+    <!--Controllers-->
     <script src="app/controllers/homeController.js"></script>
     <script src="app/controllers/contatoController.js"></script>
     <script src="app/controllers/sobreController.js"></script>
+
+    <!--Components-->
+    <script src="app/components/headerComponent.js"></script>
 </head>
 <body>
 
-    <div>
-        <ul class="nav nav-pills">
-            <li role="presentation"><a href="#!home">Home</a></li>
-            <li role="presentation"><a href="#!contato">Contato</a></li>
-            <li role="presentation"><a href="#!sobre">Sobre</a></li>
-        </ul>
-    </div>
+    <app-header-component></app-header-component>
 
     <div class="jumbotron">
         <div class="container">
